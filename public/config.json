@@ -1,0 +1,4 @@
+{
+    "contacts_host": "$CONTACTS_HOST",
+    "general_ledger_setup_host": "$GENERAL_LEDGER_SETUP_HOST"
+}

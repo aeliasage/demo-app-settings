@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  ui:
+    build:
+      context: ./
+    environment:
+      CONTACTS_HOST: https://app-talk-devtest.azurewebsites.net
+      GENERAL_LEDGER_SETUP_HOST: https://app-setup-devtest.azurewebsites.net
+    restart: always
+    ports:
+      - 3000:80
+    healthcheck:
+      test: curl --fail -s http://localhost/ || exit 1
+      interval: 5s
+      timeout: 10s
+      retries: 3

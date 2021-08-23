@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "no-console": 1, // Means warning
+    "@typescript-eslint/no-inferrable-types": 0,
+    "no-extra-boolean-cast": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
