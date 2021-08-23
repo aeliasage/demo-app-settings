@@ -28,6 +28,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ env.IMAGE_NAME }} ./Docker/github-packages/webapi
+          docker build -t ${{ env.IMAGE_NAME }} .
           docker tag ${{ env.IMAGE_NAME }} ${{ env.REGISTRY }}/aeliasage/${{ env.IMAGE_NAME }}:latest
           docker push ${{ env.REGISTRY }}/aeliasage/${{ env.IMAGE_NAME }}:latest
