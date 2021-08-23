@@ -19,6 +19,14 @@ Run tf plan via
 terraform plan
 ```
 
+If all good, then run tf apply via
+```cli
+terraform apply
+```
+
+Now, navigate to [`https://app-demo-ui.azurewebsites.net/config.json`](https://app-demo-ui.azurewebsites.net/config.json) and observe that it is probably empty. 
+
+Navigate to [`https://app-demo-ui.scm.azurewebsites.net/Env`](https://app-demo-ui.scm.azurewebsites.net/Env) and observe that it shows the environment variables `CONTACTS_HOST` and `GENERAL_LEDGER_SETUP_HOST`.
 
 
 ## Local Development Environment
