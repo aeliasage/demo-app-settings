@@ -2,6 +2,25 @@
 
 Azure App Service appsettings are not being picked up by our docker image. This repository aims to demonstrate that.
 
+## Steps
+
+Initialize TF from a terminal in the [`infrastructure`](infrastructure/) directory by running
+```cli
+terraform init
+```
+
+Format tf files
+```cli
+terraform fmt
+```
+
+Run tf plan via
+```cli
+terraform plan
+```
+
+
+
 ## Local Development Environment
 
 ### Docker Compose
